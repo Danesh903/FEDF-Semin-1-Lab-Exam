@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Website</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        .offer {
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 20px auto;
+            width: 200px;
+            background: lightyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Online Shopping</h1>
+
+    <div class="offer">
+        <h2>Special Offer!</h2>
+        <p>Get 20% off on all products.</p>
+        <button onclick="showOffer()">View Offer</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showOffer() {
+            document.getElementById("message").innerHTML =
+                "Offer applied successfully!";
+        }
+    </script>
+
+</body>
+</html>
